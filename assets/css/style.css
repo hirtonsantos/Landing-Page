@@ -27,7 +27,7 @@ family=Lato -> Títulos, textos
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* FONTS */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 /* VARIÁVEIS */
 :root{}
   
@@ -39,9 +39,42 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    color: #FFFFFF;
+    width: 365px;
+    height: 105px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 10px;
+    color:#FFFFFF;
+}
+
 img{
     max-width: 800px;
 }
+
+.large-container img {
+    width: 70px;
+}
+
+figure {
+    margin-top: 50px;
+}
+
+figcaption {
+    display: none;
+}
+
 div.flex{
     display: flex;
 }
@@ -50,10 +83,11 @@ div.full-container{
     max-width: 1850px;
     margin:0 auto;
 }
-div.large-container{
+.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
+    background-color: #00043e;
 }
 div.container{
     width: 100%;
@@ -71,15 +105,151 @@ body{}
 /* BODY */
   
 /* HEADER */
-header{}
-/* HEADER */
-  
+header{
+}
+
+.secaoDestaque {
+    background-color: #00043e;
+    margin-bottom: 50px;
+    text-align: center;
+    height: 250px;
+} 
+
+input {
+    border-radius: 2px;
+    height: 36px;
+    width: 191px;
+    border: none;
+}
+
+button {
+    border-radius: 2px;
+    height: 36px;
+    width: 85px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #007aff;
+}
+
 /* FOOTER */
 footer{}
 /* FOOTER */
 
 /* INICIAL */
 main{}
+
+.flex-col h2 {
+    color: black;
+    height: 141px;
+    display: block;
+}
+
+.flex-col p {
+    color: black;
+    margin-top: 25px;
+    word-break: break-all;
+    height: 141px;
+    display: block;
+    margin-left: 68px;
+    font-size: 19px;
+    width: 243px;
+    height: 235px;
+    text-align: center;
+}
+
+.flex-col span {
+    margin-top: 25px;
+    word-break: break-all;
+    height: 115px;
+    display: block;
+    margin-left: 68px;
+    font-size: 19px;
+    width: 243px;
+}
+
+.flex-col button {
+    margin-left: 90px;
+    color: black;
+    background-color: white;
+    width: 172px;
+    border-radius: 7px;
+    height: 47px;
+    border: solid;
+}
+
+/*.flex-col figure {
+    background-color: #e5e5e5;
+}
+
+.flex-col h2, ul {
+    background-color: #e5e5e5;    
+} */
+
+.flex-col h2 {
+    width: 390px;
+}
+
+.flex-col ul {
+    list-style: inside;
+    padding-top: 50px;
+}
+
+.flex-col li {
+    width: 223px;
+    margin-left: 50px;
+    color: #818181;
+    padding-top: 20px;
+}
+
+img {
+    width: 190px;
+    margin-left: 85px;
+}
+
+.secaoCursos li {
+    margin-top: 25px;
+}
+
+.secaoCursos p {
+    width: 275px;
+    margin-left: 50px;
+    color: #818181;
+    padding-top: 20px;
+}
+
+.secaoCalendar h2 {
+    color: black;
+    margin-top: 90px;
+    height: 55px;
+}
+
+.secaoCalendar p {
+    color: black;
+}
+
+span.calendario-data {
+    font-size: 50px;
+    background-color: #00043e;
+    color: #FFFFFF;
+    padding: 50px;
+}
+
+.calendario li {
+    margin: 60px 0px 60px 0px;
+    text-align: center;
+}
+
+.calendario-data-rodape span {
+    font-size: 35px;
+    display: flex;
+    margin-left: 150px;
+}
+
+.calendario p {
+    width: 260px;
+    margin-left: 60px;
+}
+
 /* INICIAL */
 
 /* EXTRAS */
