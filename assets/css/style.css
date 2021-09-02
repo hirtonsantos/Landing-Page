@@ -405,7 +405,7 @@ main{}
     margin-inline: auto;
     }
 
-    li:hover {
+    .calendario li:hover {
         background-color: yellow;
       }
 
