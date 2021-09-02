@@ -33,11 +33,18 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
     list-style: none;
 }
 img{
     max-width: 190px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
 }
 
 div.flex{
@@ -53,13 +60,24 @@ div.large-container{
     max-width: 1170px;
     margin:0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #00043e;
 }
+
+.topo .large-container figcaption {
+    color: #00043e;
+}
+
 div.container{
     width: 100%;
     max-width: 1140px;
     margin:0 auto;
+}
+
+div.large-container img {
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 /* GERAL */
   
@@ -79,11 +97,22 @@ header{}
     background-color: #00043e;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 20vh;
 }
 
 .secaoDestaque h2, p {
     color: white;
     text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}   
+
+.secaoDestaqueFormulario {
+    text-align: center;
+}
+
+.secaoDestaqueFormulario input {
+    margin-right: -5px;
 }
 
 input {
@@ -94,7 +123,8 @@ input {
 }
 
 button {
-    border-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     height: 36px;
     width: 85px;
     border: none;
@@ -104,7 +134,6 @@ button {
 
 .secaoSobre {
     display: flex;
-    margin-top: 100px;
 }
 
 .flex-col {
@@ -116,11 +145,52 @@ button {
     margin-bottom: 100px;
 }
 
-.flex-col p {
+.flex-col-bases {
+    display: flex;
+    flex-direction: column;
     color: black;
-    font-size: 20px;
-    word-break: break-all;
-    width: 246px;
+    background-color: #dcdcdc;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+#one {
+    padding-top: 40px;
+}
+
+.flex-col-bases img {
+    margin-bottom: 15px;
+}
+
+#one {
+    padding-top: 60px;
+}
+
+#two li {
+    text-align: left;
+    list-style: inside;
+    width: 218px;
+    margin-bottom: 12px;
+    color: #818181;
+}
+
+figcaption {
+    display: none;
+}
+
+#two {
+    margin-bottom: 100px;
+}
+
+.flex-col p, span {    
+    font-size: 18px;
+}
+
+.flex-col span {
+    height: 130px;
+    color: #818181;
 }
 
 .flex-col button {
@@ -142,6 +212,16 @@ button {
     text-align: left;
 }
 
+.flex-col h2 {
+    text-align: left;
+    margin-left: 24px;
+    width: 251px;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
 article h2, p, ul {
     margin-bottom: 20px;
 }
@@ -157,12 +237,140 @@ article li img,h3,p {
     text-align: center;
 }
 
+.secaoSobre {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.secaoSobre .flex-col {
+    margin-inline: auto;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    
+}
+
+.secaoSobre .flex-col h2 {
+    text-align: left;
+    font-size: 1.2em;
+    width: 251px;
+    margin-left: 24px;
+    margin-bottom: 50px;
+    color: #303030;
+}
+
+.secaoSobre .flex-col p {
+    font-size: 15px;
+    color: #303030;
+}
+
+.secaoSobre .flex-col span {
+    height: 130px;
+    color: #818181;
+}
+
+.secaoSobre .flex-col p, span {
+    font-size: 18px;
+}
+
+.secaoSobre .flex-col button {
+    border: 1px #818181 solid;
+    font-size: 1.1em;
+    color: #303030; 
+}
+
 .secaoCursos p {
-    color: black;
+    color: #818181;
 }
 
 .secaoCursos li{
     margin-bottom: 50px;
+}
+
+.secaoCalendar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.secaoCalendar p,h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.calendario {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.calendario li {
+    margin-bottom: 60px;
+    border: #00043e solid 1px;
+    border-top: none;
+    width: 207.73px;   
+}
+
+
+.calendario-data {
+    font-size: 40px;
+    color: white;
+    padding: 50px;
+    margin-bottom: 30px;
+    display: -webkit-inline-box;
+    justify-content: center;
+    background-color: #00043e;
+}
+
+.calendario p {
+    font-size: 17px;
+    width: 198px;
+    display: -webkit-inline-box;
+    color: #818181;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #818181;
+}
+
+.calendario-data-rodape span {
+    color: #818181;
+    font-size: 1.6em;
+}
+
+.calendario-data-rodape {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendario-data-rodape button {
+    margin-inline: auto;
+    margin-top: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 45px;
+    width: 150px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.secaoContato{
+    font-size: 15px;
+    background-color: lightblue;
+    color: #818181;
+}
+.secaoContato h2 {
+    display: inline-block;
+    color: black;
+}
+.secaoContato .flex {
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+div.secaoContato-informacoes a {
+    color: #818181;
+    text-decoration: none;
 }
 
 /* FOOTER */
@@ -187,8 +395,55 @@ main{}
 /* EXTRAS */
   
 
-/* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
-/* MEDIA QUERIES */
+@media (min-width: 769px) {
+    .secaoCursos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 83vw;
+    align-items: baseline;
+    margin-inline: auto;
+    }
+
+    .parte-lulu, .dybalada {
+        display: flex;
+    }
+
+    .secaoSobre .flex-col h2 {
+        padding-top: 40px;
+        font-size: 20px;
+        width: 423px;
+    }
+
+    #python img {
+        max-width: 421px;
+    }
+
+    .secaoSobre .flex-col p, span {
+        font-size: 20px;
+        width: 400px;
+        text-align: left;
+    }
+
+    .flex-col-bases {
+        display: flex;
+        flex-direction: column;
+        color: black;
+        background-color: #dcdcdc;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+    }
+
+    #two {
+        margin-bottom: 0px;
+        }
+
+    .calendario {
+    flex-flow: row;
+    justify-content: center;
+    }
+    .calendario li {
+        margin-right: 50px;
+    }   
+}
