@@ -405,7 +405,7 @@ main{}
     margin-inline: auto;
     }
 
-    .parte-lulu, .dybalada {
+    .parte-lulu, #dybalada {
         display: flex;
     }
 
@@ -413,16 +413,33 @@ main{}
         padding-top: 40px;
         font-size: 20px;
         width: 423px;
-    }
+    } 
 
     #python img {
         max-width: 421px;
-    }
-
+    } 
+    /*
     .secaoSobre .flex-col p, span {
         font-size: 20px;
         width: 400px;
         text-align: left;
+    } 
+
+    #dybalada span, p {
+        text-align: left;
+        width: 400px;
+    } */
+
+    .calendario p {
+        text-align: center;
+    }
+
+    .secaoCalendar p, h2 {
+        text-align: center;
+    }
+
+    .secaoCursos p {
+        text-align: center;
     }
 
     .flex-col-bases {
@@ -435,9 +452,17 @@ main{}
         width: 50vw;
     }
 
+    .flex-col-bases img {
+        margin-bottom: 70px;
+    }
+
     #two {
         margin-bottom: 0px;
         }
+    
+    #two li {
+        width: 521px;
+    }
 
     .calendario {
     flex-flow: row;
