@@ -405,6 +405,10 @@ main{}
     margin-inline: auto;
     }
 
+    li:hover {
+        background-color: yellow;
+      }
+
     .parte-lulu, #dybalada {
         display: flex;
     }
