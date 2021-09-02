@@ -400,7 +400,7 @@ main{}
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 83vw;
+    max-width: 840px;
     align-items: baseline;
     margin-inline: auto;
     }
@@ -429,6 +429,11 @@ main{}
         text-align: left;
         width: 400px;
     } */
+
+    div#dybalada {
+        max-width: 868px;
+        margin-inline: auto;
+    }
 
     .calendario p {
         text-align: center;
