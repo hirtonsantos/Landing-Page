@@ -56,8 +56,8 @@ div.full-container{
     margin:0 auto;
 }
 div.large-container{
-    width: 100%;
-    max-width: 1170px;
+    /* width: 100%;
+    max-width: 1170px; */
     margin:0 auto;
     display: flex;
     justify-content: flex-start;
@@ -83,15 +83,7 @@ div.large-container img {
   
 /* HTML */
 html{}
-/* HTML */
-  
-/* BODY */
-body{}
-/* BODY */
-  
-/* HEADER */
-header{}
-/* HEADER */
+
 .secaoDestaque {
     display: flex;
     background-color: #00043e;
@@ -519,7 +511,7 @@ footer img {
     justify-content: center;
     }
     .calendario li {
-        margin-right: 50px;
+        margin-right: 51px;
     }   
 }
 
