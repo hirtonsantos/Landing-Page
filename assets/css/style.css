@@ -103,6 +103,7 @@ header{}
 .secaoDestaque h2, p {
     color: white;
     text-align: center;
+    padding-top: 20px;
     margin-bottom: 0.5rem;
     font-weight: normal;
 }   
@@ -122,6 +123,23 @@ input {
     border: none;
 }
 
+::-webkit-input-placeholder  { 
+    padding-left: 15px;
+    width: 150px;
+}
+
+textarea#mensagem {
+    font-family: 'Lato';
+    font-size: 15px;
+    width: 190px;
+    height: 100px;
+    border: none;
+    padding-top: 8px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+
 button {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
@@ -130,6 +148,13 @@ button {
     border: none;
     color: #FFFFFF;
     background-color: #007aff;
+}
+
+input#send {
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    margin-inline-start: auto;
 }
 
 .secaoSobre {
@@ -141,9 +166,15 @@ button {
     flex-direction: column;
     color: black;
     text-align: center;
+    padding: 15px;
     align-items: center;
-    margin-bottom: 100px;
 }
+
+.flex-col input {
+    border-radius: 5px;
+    margin: 3px;
+}
+
 
 .flex-col-bases {
     display: flex;
@@ -203,19 +234,16 @@ figcaption {
 }
 
 .flex-col li {
-    list-style: inside;
+    list-style: none;
+    text-align: center;
 }
 
-.flex-col ul {
-    width: 222px;
-    word-break: break-all;
-    text-align: left;
+ .flex-col ul {
+     color: red;
 }
 
 .flex-col h2 {
-    text-align: left;
-    margin-left: 24px;
-    width: 251px;
+    text-align: center;
 }
 
 article {
@@ -357,7 +385,7 @@ article li img,h3,p {
 
 .secaoContato{
     font-size: 15px;
-    background-color: lightblue;
+    background-color: #b4b1b1;
     color: #818181;
 }
 .secaoContato h2 {
@@ -373,29 +401,38 @@ div.secaoContato-informacoes a {
     text-decoration: none;
 }
 
+label {
+    display: none;
+}
+
 /* FOOTER */
-footer{}
-/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+}
 
-/* INICIAL */
-main{}
-/* INICIAL */
-
-/* EXTRAS */
-
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
-
-/* EXTRAS */
-  
+footer img {
+    height: 142px;
+    width: 233px;
+}
 
 @media (min-width: 769px) {
+
+
+    #botafogo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    textarea#mensagem {
+        width: 388px;
+    }
+
+    .flex-col {
+        padding: 50px;
+    }
+
+    /* ------------------------------------- */
     .secaoCursos ul {
     display: flex;
     flex-wrap: wrap;
@@ -439,6 +476,10 @@ main{}
         margin-inline: auto;
     }
 
+
+    .secaoContato .flex {
+    flex-flow:wrap
+    }
     .calendario p {
         text-align: center;
     }
@@ -481,3 +522,4 @@ main{}
         margin-right: 50px;
     }   
 }
+
